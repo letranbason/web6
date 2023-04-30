@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/font-web/Lora-Regular.woff2') format('woff2'),
+      url('../fonts/font-web/Lora-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/font-web/Lora-SemiBold.woff2') format('woff2'),
+      url('../fonts/font-web/Lora-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/font-web/Lora-Medium.woff2') format('woff2'),
+      url('../fonts/font-web/Lora-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/font-web/Lora-Bold.woff2') format('woff2'),
+      url('../fonts/font-web/Lora-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotu';
+  src: url('../fonts/font-web/Gotu-Regular.woff2') format('woff2'),
+      url('../fonts/font-web/Gotu-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../fonts/font-web/SFProDisplay-Regular.woff2') format('woff2'),
+      url('../fonts/font-web/SFProDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+$font-family: 'SFProDisplay', sans-serif;
+$cl-blue: #073C9B;
+$cl-orange: #FF6955;
+$cl-white: #FFFFFF;
+$cl-gray: #42495B;
+$cl-lightgray:#828691;
+$cl-pink: #FF4082;
+$cl-green: #20452A;
+$cl-brown: #5C432E;
+$cl-lightbrown: #CFAE89;
+$cl-lightgold: #C6B59E;
+$cl-dark : #1D2827;
+
+
+.f-f{
+  font-family: $font-family;
+}
+.f-gotu{
+  font-family: 'Gotu';
+}
+.f-title{
+  font-family:'Lora';
+}
+.cl-font{
+  background: linear-gradient(180deg, #F0E4D8 0%, #BDB3AA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.fw-black{
+  font-weight: 900;
+}
+.fw-700{
+  font-weight: 700;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-book{
+  font-weight: 350;
+}
+.fs-72{
+  font-size: 72px;
+}
+.fs-56{
+  font-size: 56px;
+}
+.fs-45{
+  font-size: 45px;
+}
+.fs-40{
+  font-size: 40px;
+}
+.fs-36{
+  font-size: 36px;
+}
+.fs-28{
+  font-size: 28px;
+}
+.fs-26{
+  font-size: 26px;
+}
+.fs-24{
+  font-size: 24px;
+}
+.fs-20{
+  font-size: 20px;
+}
+.fs-18{
+  font-size: 18px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.cl-blue{
+  color: $cl-blue;
+}
+.cl-orange{
+  color: $cl-orange;
+}
+.cl-brown{
+  color: $cl-brown;
+}
+.cl-lightbrown{
+  color: $cl-lightbrown;
+}
+.cl-lightgold{
+  color: $cl-lightgold;
+}
+.cl-dark{
+  color: $cl-dark;
+}
+.cl-green{
+  color: $cl-green;
+}
+.cl-white{
+  color: #fff;
+}
+.p-7{
+  padding: 7rem;
+}
+.mt-10{
+  margin-top: 10rem;
+}
+@media (min-width: 768px) and (max-width:1024px){
+  .p-7{
+    padding: 2rem;
+  }
+  .fs-56{
+    font-size: 46px;
+  }   
+  .mt-10{
+    margin-top: 3rem;
+  }      
+}
+
+@media (max-width: 767px) {
+  .fs-72{
+    font-size: 50px;
+  }
+  .fs-56{
+    font-size: 32px;
+  }  
+  .fs-45{
+    font-size: 30px;
+  }
+  .fs-36{
+    font-size: 25px;
+  }
+  .fs-28{
+    font-size: 20px;
+  }
+  .fs-18{
+    font-size: 16px;
+  }
+  .fs-16{
+    font-size: 14px;
+  }
+  .fs-14{
+    font-size: 13px;
+  }
+  .p-7{
+    padding: 1rem;
+  }
+  .mt-10{
+    margin-top: 0;
+  }
+}
+@mixin transform($property){
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+@mixin transition($property){
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+@keyframes ringing {
+  from {box-shadow: 0px 0px 0px 10px #006d2278;}
+  to {box-shadow: 0px 0px 0px 5px #006d2278;}
+}
